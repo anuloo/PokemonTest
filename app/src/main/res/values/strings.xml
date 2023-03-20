@@ -2,5 +2,6 @@
     <string name="app_name">PokemonTest</string>
     <string name="pokemon_weight">Weight</string>
     <string name="pokemon_height">Height</string>
-    <string name="pokemon_powers">Powers:</string>
+    <string name="pokemon_power">Power:</string>
+    <string name="pokemon_button_label">Activate Power</string>
 </resources>

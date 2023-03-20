@@ -11,9 +11,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.pokemontest.presentation.pokemon_detail.PokemonDetailScreen
 import com.example.pokemontest.presentation.pokemon_list.PokemonListScreen
 import com.example.pokemontest.presentation.ui.theme.PokemonTestTheme
-import com.plcoding.cryptocurrencyappyt.presentation.pokemon_detail.PokemonDetailScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

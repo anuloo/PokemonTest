@@ -1,4 +1,4 @@
-package com.plcoding.cryptocurrencyappyt.presentation.component
+package com.example.pokemontest.presentation.component
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme

@@ -1,4 +1,4 @@
-package com.plcoding.cryptocurrencyappyt.presentation.pokemon_detail
+package com.example.pokemontest.presentation.pokemon_detail
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.CircularProgressIndicator
@@ -7,15 +7,16 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.pokemontest.R
+import com.example.pokemontest.presentation.component.DetailRow
 import com.example.pokemontest.presentation.component.HeaderBar
 import com.example.pokemontest.presentation.component.TitleBar
 import com.example.pokemontest.presentation.component.TypeRow
-import com.example.pokemontest.presentation.pokemon_detail.PokemonDetailViewModel
 import com.example.pokemontest.presentation.pokemon_detail.components.VectorImage
-import com.plcoding.cryptocurrencyappyt.presentation.component.DetailRow
 
 @Composable
 fun PokemonDetailScreen(
@@ -50,7 +51,10 @@ fun PokemonDetailScreen(
                     url = pokemon.sprites.other.dreamWorld.frontDefault
                 )
 
-                DetailRow(title = "Weight", value = pokemon.weight.toString())
+                DetailRow(
+                    title = stringResource(id = R.string.pokemon_weight),
+                    value = pokemon.weight.toString()
+                )
                 DetailRow(title = "Height", value = pokemon.height.toString())
                 TypeRow(title = "Types:", types = pokemon.types)
             }
